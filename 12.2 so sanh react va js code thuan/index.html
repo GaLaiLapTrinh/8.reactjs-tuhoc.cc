@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+
+  <script>
+    // Tạo thẻ <div> để chứa nội dung
+    const root = document.getElementById("root");
+
+    // Tạo tiêu đề h1
+    const title = document.createElement("h1");
+    title.textContent = "Danh sách công việc của tôi";
+
+    // Tạo danh sách không thứ tự (ul)
+    const ul = document.createElement("ul");
+
+    // Tạo danh sách công việc (li)
+    const tasks = ["Học bài React", "Hoàn thành bài tập lập trình", "Dọn dẹp bàn làm việc"];
+    tasks.forEach(task => {
+      const li = document.createElement("li");
+      li.textContent = task;
+      ul.appendChild(li);
+    });
+
+    // Tạo thông điệp chào mừng
+    const message = document.createElement("p");
+    message.textContent = "Chúc bạn hoàn thành công việc tốt nhất hôm nay!";
+
+    // Gắn tất cả các phần tử vào thẻ root
+    root.appendChild(title);
+    root.appendChild(ul);
+    root.appendChild(message);
+  </script>
+
+
+</body>
+
+</html>
