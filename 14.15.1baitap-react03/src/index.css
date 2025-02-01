@@ -1,0 +1,57 @@
+/* Đặt font và màu nền */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Chiều cao toàn màn hình */
+  display: flex; /* Sử dụng Flexbox để căn giữa */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  background: linear-gradient(135deg, #cf52cb, #671a65); /* Gradient đồng nhất */
+  color: #ffffff;
+  text-align: center;
+  overflow: hidden; /* Ẩn phần thừa nếu có */
+}
+
+/* Phong cách cho container */
+.container {
+  padding: 2rem;
+  border: none; /* Loại bỏ border nếu có */
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Phong cách văn bản */
+p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  color: #ffffff;
+}
+
+/* Nút bấm */
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #1fbc9c;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #16a085;
+}
+
+/* Khi active */
+.active {
+  color: #448871;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 4px 8px #5b16c39a;
+  transform: scale(1.2);
+}
