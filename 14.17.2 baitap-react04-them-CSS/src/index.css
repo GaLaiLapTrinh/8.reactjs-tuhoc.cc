@@ -1,0 +1,54 @@
+/* Tổng quan */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #3a0ca3, #7209b7, #f72585);
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #1aa393, #8ab36f, #7c5aa9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.book-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.book-item {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: linear-gradient(45deg, #7209b7, #560bad);
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.book-item:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #f72585, #7209b7);
+}
