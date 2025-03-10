@@ -16,7 +16,7 @@ export default function Examples() {
           <code>{EXAMPLES[selectedTopic].code}</code>
         </pre>
       </div>
-    );
+    );D:\0.lap trinh\3.3-react-js\0..slide bài giảng kiên\1.code-bai-hoc-tuhoc.cc\8.reactjs-tuhoc.cc
   }
 
   function handleSelect(selectedButton) {
